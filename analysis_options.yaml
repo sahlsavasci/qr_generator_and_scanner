@@ -19,6 +19,11 @@ analyzer:
     - macos/**
     - linux/**
 
+  errors: 
+    unused_import: error
+    prefer_const_constructors: error
+    avoid_print: ignore
+    
 linter:
   # The lint rules applied to this project can be customized in the
   # section below to disable rules from the `package:flutter_lints/flutter.yaml`

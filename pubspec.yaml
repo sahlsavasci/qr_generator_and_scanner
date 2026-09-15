@@ -30,6 +30,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+# Device preview untuk testing UI di berbagai device (development only)
+  device_preview: ^3.0.0
+  # Scanner QR Code dengan kamera (support Android/iOS/Web)
+  mobile_scanner: ^7.4.1
+  # Permission handler untuk minta akses kamera, storage, dll
+  permission_handler: ^13.0.2
+  # Generator QR Code cantik & customizable
+  pretty_qr_code: ^3.6.0
+  # Ambil screenshot widget (untuk save/share QR)
+  screenshot: ^3.0.0
+  # Share QR code ke aplikasi lain (WA, IG, Email, dll)
+  share_plus: ^13.3.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -51,6 +63,25 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  
+  # Daftar folder assets (akhiri dengan / agar seluruh isi folder terbaca)
+  assets:
+    - assets/images/
+    - assets/fonts/
+    # Jika ada file spesifik:
+    # - assets/images/splash.png
+  
+  # Custom font: Manrope (Regular, Medium, SemiBold, Bold)
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Regular.ttf
+        - asset: assets/fonts/Manrope-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Manrope-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Manrope-Bold.ttf
+          weight: 700
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
